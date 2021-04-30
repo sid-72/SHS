@@ -19,8 +19,8 @@ $(document).ready(function(){
 <body>
 	<?php include "./header.html" ?>
 	
-	<h2 style="text-align:center;">Airport records</h2>
-	<div style="margin-top:0px;margin-left:1280px;">
+	<h2 style="text-align:left;color:red;margin-left:50px;"><u><b>Airport records</b></u></h2>
+	<div style="margin-top:0px;margin-left:1050px;">
 			<b>See here for the reference</b>
 			<select style="width:198px;height:40px;">
 				<option value="India">India</option>
@@ -44,14 +44,14 @@ $(document).ready(function(){
 				<option value="Florida">Florida</option>
 			</select><br>
 			<input type="text" id="myInput" placeholder="Type country,state,city">
-	</div>
-	<table width="80%" border="1" style="border-collapse:collapse;">
+	</div><br><br>
+	<table class="table table-striped table-dark table-bordered">
 	<thead>
-		<tr style="background-color:#FF0000">
-			<th style="text-align:center;"><strong>Airport Name</strong></th>
-			<th style="text-align:center;"><strong>STATE</strong></th>
-			<th style="text-align:center;"><strong>COUNTRY</strong></th>
-			<th style="text-align:center;"><strong>CITY</strong></th>
+		<tr>
+			<th scope="col" style="text-align:center;"><strong>Airport Name</strong></th>
+			<th scope="col" style="text-align:center;"><strong>STATE</strong></th>
+			<th scope="col" style="text-align:center;"><strong>COUNTRY</strong></th>
+			<th scope="col" style="text-align:center;"><strong>CITY</strong></th>
 		</tr>
 	</thead>
 	<tbody id="myTable">
@@ -61,8 +61,8 @@ $(document).ready(function(){
 			while($row = mysqli_fetch_assoc($result)) 
 		{ ?>
 
-			<tr style="background-color:pink">
-				<td style="text-align:center;"><?php echo $row["AP_NAME"]; ?></td>
+			<tr>
+				<td scope="row" style="text-align:center;"><?php echo $row["AP_NAME"]; ?></td>
 				<td style="text-align:center;"><?php echo $row["STATE"]; ?></td>
 				<td style="text-align:center;"><?php echo $row["COUNTRY"]; ?></td>
 				<td style="text-align:center;"><?php echo $row["CITY"]; ?></td>

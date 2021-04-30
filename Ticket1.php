@@ -20,8 +20,8 @@ $(document).ready(function(){
 
 	<body>
 		<?php include "./header.html" ?>
-		 
-			<div style="margin-top:20px;margin-left:1200px;">
+		<h2 style="text-align:left;color:red;margin-left:50px;"><u><b>Ticket prices</b></u></h2>
+			<div style="margin-top:20px;margin-left:1050px;">
 				<b>See cities for reference</b>
 					<select  style="width:198px;height:40px;">
 						<option value="Calicut">Calicut</option>
@@ -67,14 +67,14 @@ $(document).ready(function(){
 					</select>
 					<br>
 					<input type="text" id="myInput" placeholder="type city,class for search">
-			</div>
-			<table width="40%" border="1" style="border-collapse:collapse;margin-left:10px;">
+			</div><br><br>
+			<table class="table table-striped table-bordered  table-dark">
 				<thead>
-					<tr style="background-color:#FF0000">
-						<th><strong>SOURCE</strong></th>
-						<th><strong>DESTINATION</strong></th>
-						<th><strong>CLASS</strong></th>
-						<th><strong>PRICE</strong></th>
+					<tr>
+						<th scope="col" style="text-align:center;"><strong>SOURCE</strong></th>
+						<th scope="col" style="text-align:center;"><strong>DESTINATION</strong></th>
+						<th scope="col" style="text-align:center;"><strong>CLASS</strong></th>
+						<th scope="col" style="text-align:center;"><strong>PRICE</strong></th>
 					</tr>
 				</thead>
 				<tbody id="myTable">
@@ -82,8 +82,8 @@ $(document).ready(function(){
 		           $sel_query="Select * from ticket1";
 		           $result = mysqli_query($con,$sel_query);
 		           while($row = mysqli_fetch_assoc($result)) { ?>
-						<tr style="background-color:pink">
-							<td align="center">
+						<tr>
+							<td scope="row" align="center">
 								<?php echo $row["SOURCE"]; ?>
 							</td>
 							<td align="center">

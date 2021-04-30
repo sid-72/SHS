@@ -3,7 +3,7 @@
 <title>Login page</title>
 <?php include "./head.html" ?>
 </head>
-<body>
+<body class="example">
 
 <?php include "./header.html" ?>
 	
@@ -41,12 +41,12 @@ else{
 }
 else{
 ?>
-<div class="form">
-<h1 style="color:green;">Sign in/Sign up</h1>
+<div class="form" style="margin-top:-70px;">
 <form action="" method="post" name="login">
+<!--
 <div class="imgcontainer">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRMMvktNrU0p6IMp3Jq79ebNeedXbdJQQQbA&usqp=CAU" class="avatar">
-</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRMMvktNrU0p6IMp3Jq79ebNeedXbdJQQQbA&usqp=CAU" class="avatar" style="height:100px;width:100px;">
+</div>-->
 <input type="text" name="username" placeholder="Enter username" value='<?php if(isset($_COOKIE["username"])) { echo $_COOKIE["username"]; } ?>' onkeyup="validateuser(this.value)" required />
 <p style="color:red;"><span id="username"></span></p>
 <div class="container" style="margin-left:-15px;">
@@ -82,7 +82,7 @@ else{
 
 
 </script>
-<p>New User? <a href='r.php' class="pa"> <b>Sign up</b></a></p><br>
+<p>New User? <a href='r.php' style="text-decoration:none;"> <b>Sign up</b></a></p>
 <a href='pass.php' style="text-decoration:none;"><b>Forgot Password?</b></a>
 </div><br><br><br>
 <?php } ?>

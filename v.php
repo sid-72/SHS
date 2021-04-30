@@ -21,8 +21,8 @@ $(document).ready(function(){
 	<body>
 		<?php include "./header.html" ?>
 		
-			<h2 style="text-align:center;">Flight records</h2>
-			<div style="margin-left:1200px;">
+		<h2 style="text-align:left;color:red;margin-left:50px;"><u><b>Flight records</b></u></h2>
+			<div style="margin-left:1050px;">
 				<b>Cities for reference</b>
 					<select style="width:198px;height:40px;">
 						<option value="Calicut">Calicut</option>
@@ -69,26 +69,26 @@ $(document).ready(function(){
 					<br>
 					<br>
 					<input type="text"  id='myInput' placeholder="type city here for search">
-			</div>
+			</div><br><br>
 			<?php 
              $sel_query="SELECT * FROM flight;";
              $result = mysqli_query($con,$sel_query);
              ?>
-				<table width="65%" border="1" style="border-collapse:collapse;">
+				<table class="table table-striped table-bordered table-dark">
 					<thead>
-						<tr style="background-color:#FF0000">
-							<th style="text-align:center;"><strong>FLIGHTCODE</strong></th>
-							<th style="text-align:center;"><strong>SOURCE</strong></th>
-							<th style="text-align:center;"><strong>DESTINATION</strong></th>
-							<th style="text-align:center;"><strong>ARRIVAL TIME</strong></th>
-							<th style="text-align:center;"><strong>DEPARTURE TIME</strong></th>
+						<tr>
+							<th scope="col" style="text-align:center;"><strong>FLIGHTCODE</strong></th>
+							<th scope="col" style="text-align:center;"><strong>SOURCE</strong></th>
+							<th scope="col" style="text-align:center;"><strong>DESTINATION</strong></th>
+							<th scope="col" style="text-align:center;"><strong>ARRIVAL TIME</strong></th>
+							<th scope="col" style="text-align:center;"><strong>DEPARTURE TIME</strong></th>
 						</tr>
 					</thead>
 					<tbody id="myTable">
 						<?php
                          while($row = mysqli_fetch_assoc($result)) { ?>
-							<tr style="background-color:pink">
-								<td style="text-align:center;">
+							<tr>
+								<td scope="row" style="text-align:center;">
 									<?php echo $row["FLIGHTCODE"]; ?>
 								</td>
 								<td style="text-align:center;">

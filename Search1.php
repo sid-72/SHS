@@ -17,19 +17,19 @@ if (strcmp($result,"ChennaiMumbai") == "true")
 	$query2="SELECT * FROM flight WHERE SOURCE='Chennai' AND DESTINATION='Mumbai'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
-	<table width="65%" border="1" style="border-collapse:collapse;">
+	<table class="table table-striped table-bordered  table-dark">
     <thead>
-    <tr style="background-color:#FF0000">
-    <th><strong>FLIGHTCODE</strong></th>
-    <th><strong>SOURCE</strong></th>
-    <th><strong>DESTINATION</strong></th>
-    <th><strong>ARRIVAL TIME</strong></th>
-    <th><strong>DEPARTURE TIME</strong></th>
+    <tr>
+    <th scope="col" style="text-align:center;"><strong>FLIGHTCODE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>SOURCE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DESTINATION</strong></th>
+    <th scope="col" style="text-align:center;"><strong>ARRIVAL TIME</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DEPARTURE TIME</strong></th>
     </tr>
     </thead>
     <tbody>
-    <tr style="background-color:pink">
-    <td align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
+    <tr>
+    <td scope="row" align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
     <td align="center"><?php echo $row2["SOURCE"]; ?></td>
     <td align="center"><?php echo $row2["DESTINATION"]; ?></td>
     <td align="center"><?php echo $row2["ARRIVAL"]; ?></td>
@@ -79,19 +79,19 @@ if (strcmp($result, "DelhiMumbai") == "true")
 	$query2="SELECT * FROM flight WHERE SOURCE='Delhi' AND DESTINATION='Mumbai' ";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
-	<table width="65%" border="1" style="border-collapse:collapse;">
+	<table class="table table-striped table-bordered  table-dark">
     <thead>
-    <tr style="background-color:#FF0000">
-    <th><strong>FLIGHTCODE</strong></th>
-    <th><strong>SOURCE</strong></th>
-    <th><strong>DESTINATION</strong></th>
-    <th><strong>ARRIVAL TIME</strong></th>
-    <th><strong>DEPARTURE TIME</strong></th>
+    <tr>
+    <th scope="col" style="text-align:center;"><strong>FLIGHTCODE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>SOURCE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DESTINATION</strong></th>
+    <th scope="col" style="text-align:center;"><strong>ARRIVAL TIME</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DEPARTURE TIME</strong></th>
     </tr>
     </thead>
     <tbody>
-    <tr style="background-color:pink">
-    <td align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
+    <tr>
+    <td scope="row" align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
     <td align="center"><?php echo $row2["SOURCE"]; ?></td>
     <td align="center"><?php echo $row2["DESTINATION"]; ?></td>
     <td align="center"><?php echo $row2["ARRIVAL"]; ?></td>
@@ -140,19 +140,19 @@ if (strcmp($result, "GoaDelhi") == "true")
 	$query2="SELECT * FROM flight WHERE SOURCE='Goa' AND DESTINATION='Delhi'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
-	<table width="65%" border="1" style="border-collapse:collapse;">
+	<table class="table table-striped table-bordered  table-dark">
     <thead>
-    <tr style="background-color:#FF0000">
-    <th><strong>FLIGHTCODE</strong></th>
-    <th><strong>SOURCE</strong></th>
-    <th><strong>DESTINATION</strong></th>
-    <th><strong>ARRIVAL TIME</strong></th>
-    <th><strong>DEPARTURE TIME</strong></th>
+    <tr>
+    <th scope="col" style="text-align:center;"><strong>FLIGHTCODE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>SOURCE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DESTINATION</strong></th>
+    <th scope="col" style="text-align:center;"><strong>ARRIVAL TIME</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DEPARTURE TIME</strong></th>
     </tr>
     </thead>
     <tbody>
-    <tr style="background-color:pink">
-    <td align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
+    <tr>
+    <td scope="row" align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
     <td align="center"><?php echo $row2["SOURCE"]; ?></td>
     <td align="center"><?php echo $row2["DESTINATION"]; ?></td>
     <td align="center"><?php echo $row2["ARRIVAL"]; ?></td>
@@ -201,19 +201,19 @@ if (strcmp($result, "FrankfurtDelhi") == "true")
 	$query2="SELECT * FROM flight WHERE SOURCE='Frankfurt' AND DESTINATION='Delhi'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
-	<table width="65%" border="1" style="border-collapse:collapse;">
+	<table class="table table-striped table-bordered  table-dark">
     <thead>
-    <tr style="background-color:#FF0000">
-    <th><strong>FLIGHTCODE</strong></th>
-    <th><strong>SOURCE</strong></th>
-    <th><strong>DESTINATION</strong></th>
-    <th><strong>ARRIVAL TIME</strong></th>
-    <th><strong>DEPARTURE TIME</strong></th>
+    <tr>
+    <th scope="col" style="text-align:center;"><strong>FLIGHTCODE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>SOURCE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DESTINATION</strong></th>
+    <th scope="col" style="text-align:center;"><strong>ARRIVAL TIME</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DEPARTURE TIME</strong></th>
     </tr>
     </thead>
     <tbody>
-    <tr style="background-color:pink">
-    <td align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
+    <tr>
+    <td scope="row" align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
     <td align="center"><?php echo $row2["SOURCE"]; ?></td>
     <td align="center"><?php echo $row2["DESTINATION"]; ?></td>
     <td align="center"><?php echo $row2["ARRIVAL"]; ?></td>
@@ -263,19 +263,19 @@ if (strcmp($result, "FrankfurtDelhi") == "true")
 	$query2="SELECT * FROM flight WHERE SOURCE='Calicut' AND DESTINATION='San Francisco'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
-	<table width="65%" border="1" style="border-collapse:collapse;">
+	<table class="table table-striped table-bordered  table-dark">
     <thead>
-    <tr style="background-color:#FF0000">
-    <th><strong>FLIGHTCODE</strong></th>
-    <th><strong>SOURCE</strong></th>
-    <th><strong>DESTINATION</strong></th>
-    <th><strong>ARRIVAL TIME</strong></th>
-    <th><strong>DEPARTURE TIME</strong></th>
+    <tr>
+    <th scope="col" style="text-align:center;"><strong>FLIGHTCODE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>SOURCE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DESTINATION</strong></th>
+    <th scope="col" style="text-align:center;"><strong>ARRIVAL TIME</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DEPARTURE TIME</strong></th>
     </tr>
     </thead>
     <tbody>
-    <tr style="background-color:pink">
-    <td align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
+    <tr>
+    <td scope="row" align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
     <td align="center"><?php echo $row2["SOURCE"]; ?></td>
     <td align="center"><?php echo $row2["DESTINATION"]; ?></td>
     <td align="center"><?php echo $row2["ARRIVAL"]; ?></td>
@@ -326,19 +326,19 @@ if(strcmp($result, "DelhiNewYorkCity") == "true")
 	$query2="SELECT * FROM flight WHERE SOURCE='Delhi' AND DESTINATION='New York City'";
     $result2=mysqli_query($con,$query2) or die(mysql_error());
     $row2=mysqli_fetch_assoc($result2);?>
-	<table width="65%" border="1" style="border-collapse:collapse;">
+	<table class="table table-striped table-bordered  table-dark">
     <thead>
-    <tr style="background-color:#FF0000">
-    <th><strong>FLIGHTCODE</strong></th>
-    <th><strong>SOURCE</strong></th>
-    <th><strong>DESTINATION</strong></th>
-    <th><strong>ARRIVAL TIME</strong></th>
-    <th><strong>DEPARTURE TIME</strong></th>
+    <tr>
+    <th scope="col" style="text-align:center;"><strong>FLIGHTCODE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>SOURCE</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DESTINATION</strong></th>
+    <th scope="col" style="text-align:center;"><strong>ARRIVAL TIME</strong></th>
+    <th scope="col" style="text-align:center;"><strong>DEPARTURE TIME</strong></th>
     </tr>
     </thead>
     <tbody>
-    <tr style="background-color:pink">
-    <td align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
+    <tr>
+    <td scope="row" align="center"><?php echo $row2["FLIGHTCODE"]; ?></td>
     <td align="center"><?php echo $row2["SOURCE"]; ?></td>
     <td align="center"><?php echo $row2["DESTINATION"]; ?></td>
     <td align="center"><?php echo $row2["ARRIVAL"]; ?></td>
@@ -492,7 +492,3 @@ else{
 <?php include "./footer.html" ?>
 </body>	
 </html>
-
-
-
-
